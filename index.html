@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Minimalista</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery-item" onclick="openModal(0)">
+            <img src="monkey1.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item" onclick="openModal(1)">
+            <img src="monkey2.jpg" alt="Imagen 2">
+        </div>
+        <div class="gallery-item" onclick="openModal(2)">
+            <img src="monkey3.jpg" alt="Imagen 3">
+        </div>
+        <div class="gallery-item" onclick="openModal(3)">
+            <img src="monkey4.jpg" alt="Imagen 4">
+        </div>
+        <div class="gallery-item" onclick="openModal(4)">
+            <img src="monkey5.jpg" alt="Imagen 5">
+        </div>
+        <div class="gallery-item" onclick="openModal(5)">
+            <img src="monkey6.jpg" alt="Imagen 6">
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <img id="modal-img" class="modal-content" src="">
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
